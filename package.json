@@ -1,8 +1,8 @@
 {
-  "name": "strapi-sqlite",
+  "name": "cieco-strapi",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Strapi application for CIÉCO website",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -11,19 +11,19 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-i18n": "4.1.7",
-    "@strapi/strapi": "4.1.7",
-    "@strapi/plugin-users-permissions": "4.1.7",
-    "sqlite3": "^5.0.2"
+    "@strapi/strapi": "4.3.6",
+    "@strapi/plugin-users-permissions": "4.3.6",
+    "@strapi/plugin-i18n": "4.3.6",
+    "better-sqlite3": "7.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "emchateau"
   },
   "strapi": {
     "uuid": "b4a9b934-98e8-401e-9f60-ad3319a3e359"
   },
   "engines": {
-    "node": ">=10.0.0",
+    "node": ">=14.19.1 <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
