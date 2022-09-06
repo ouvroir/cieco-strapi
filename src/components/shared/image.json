@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_images",
+  "info": {
+    "displayName": "Image",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_quotes",
+  "info": {
+    "displayName": "Quote",
+    "icon": "angle-double-left"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    },
+    "reference": {
+      "type": "richtext"
+    }
+  }
+}

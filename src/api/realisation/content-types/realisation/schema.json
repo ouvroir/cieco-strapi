@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "announcements",
+  "collectionName": "realisations",
   "info": {
-    "singularName": "announcement",
-    "pluralName": "announcements",
-    "displayName": "Annonces",
+    "singularName": "realisation",
+    "pluralName": "realisations",
+    "displayName": "Réalisations",
     "description": ""
   },
   "options": {
@@ -23,9 +23,8 @@
         }
       },
       "type": "string",
-      "required": true,
       "private": true,
-      "unique": false
+      "required": true
     },
     "title": {
       "pluginOptions": {
@@ -64,11 +63,10 @@
     "link": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "string",
-      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
+      "type": "string"
     },
     "pdf": {
       "type": "media",
@@ -106,7 +104,8 @@
         }
       },
       "type": "uid",
-      "targetField": "label"
+      "targetField": "label",
+      "required": false
     },
     "content": {
       "pluginOptions": {
@@ -119,20 +118,15 @@
         "shared.image",
         "shared.quote",
         "shared.rich-text",
+        "shared.seo",
         "shared.slider"
       ]
     },
-    "places": {
+    "annonces": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::place.place",
-      "inversedBy": "annonces"
-    },
-    "realisations": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::realisation.realisation",
-      "inversedBy": "annonces"
+      "target": "api::announcement.announcement",
+      "inversedBy": "realisations"
     }
   }
 }
