@@ -39,6 +39,12 @@
       "relation": "manyToMany",
       "target": "api::announcement.announcement",
       "mappedBy": "places"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::realisation.realisation",
+      "mappedBy": "places"
     }
   }
 }

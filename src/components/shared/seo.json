@@ -2,7 +2,8 @@
   "collectionName": "components_shared_seos",
   "info": {
     "displayName": "SEO",
-    "icon": "atom"
+    "icon": "atom",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,12 +15,17 @@
       "type": "string",
       "required": true
     },
+    "keywords": {
+      "type": "string"
+    },
     "shareImage": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.share-image"
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

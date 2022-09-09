@@ -64,8 +64,71 @@
         "shared.image",
         "shared.quote",
         "shared.rich-text",
-        "shared.seo",
         "shared.slider"
+      ]
+    },
+    "team": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.image",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider"
+      ]
+    },
+    "axes": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.image",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider"
+      ]
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::realisation.realisation",
+      "inversedBy": "projets"
+    },
+    "annonces": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::announcement.announcement",
+      "inversedBy": "projets"
+    },
+    "logos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "SEO": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.seo"
       ]
     }
   }

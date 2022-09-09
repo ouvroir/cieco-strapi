@@ -118,15 +118,36 @@
         "shared.image",
         "shared.quote",
         "shared.rich-text",
-        "shared.seo",
         "shared.slider"
       ]
     },
-    "annonces": {
+    "places": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::announcement.announcement",
+      "target": "api::place.place",
       "inversedBy": "realisations"
+    },
+    "projets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::projet.projet",
+      "mappedBy": "realisations"
+    },
+    "SEO": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.seo"
+      ]
+    },
+    "mots_clefs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
     }
   }
 }
