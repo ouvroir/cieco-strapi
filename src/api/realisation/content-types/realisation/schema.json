@@ -144,10 +144,23 @@
         "shared.seo"
       ]
     },
-    "mots_clefs": {
+    "keywords": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::tag.tag"
+    },
+    "subtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::type.type"
     }
   }
 }

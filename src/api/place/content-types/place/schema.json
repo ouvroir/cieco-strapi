@@ -45,6 +45,12 @@
       "relation": "manyToMany",
       "target": "api::realisation.realisation",
       "mappedBy": "places"
+    },
+    "breves": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::brief.brief",
+      "mappedBy": "places"
     }
   }
 }
