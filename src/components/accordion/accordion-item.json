@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_accordion_accordion_items",
+  "info": {
+    "displayName": "accordion-item",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "itemTitle": {
+      "type": "richtext"
+    },
+    "itemContent": {
+      "type": "richtext"
+    }
+  }
+}

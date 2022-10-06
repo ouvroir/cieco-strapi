@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "ciecos",
+  "collectionName": "abouts",
   "info": {
-    "singularName": "cieco",
-    "pluralName": "ciecos",
-    "displayName": "CIÉCO",
-    "description": ""
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "À propos"
   },
   "options": {
     "draftAndPublish": true
@@ -31,19 +30,6 @@
         }
       },
       "type": "richtext"
-    },
-    "logos": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
     },
     "content": {
       "pluginOptions": {
