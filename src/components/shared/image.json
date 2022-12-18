@@ -2,22 +2,34 @@
   "collectionName": "components_shared_images",
   "info": {
     "displayName": "Image",
-    "icon": "address-card"
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "caption": {
       "type": "richtext"
     },
     "details": {
       "type": "richtext"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "required": false,
+      "default": "center"
     }
   }
 }

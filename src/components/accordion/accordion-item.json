@@ -2,15 +2,16 @@
   "collectionName": "components_accordion_accordion_items",
   "info": {
     "displayName": "accordion-item",
-    "icon": "angle-double-down"
+    "icon": "angle-double-down",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "itemTitle": {
-      "type": "richtext"
-    },
     "itemContent": {
       "type": "richtext"
+    },
+    "itemTitle": {
+      "type": "string"
     }
   }
 }

@@ -2,14 +2,29 @@
   "collectionName": "components_shared_sliders",
   "info": {
     "displayName": "Slider",
-    "icon": "american-sign-language-interpreting"
+    "icon": "american-sign-language-interpreting",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Images": {
+    "label": {
+      "type": "string"
+    },
+    "item": {
       "type": "component",
       "repeatable": true,
-      "component": "shared.image"
+      "component": "gallery.gallery-item"
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "slider",
+        "small",
+        "large",
+        "collection"
+      ],
+      "default": "large",
+      "required": true
     }
   }
 }
