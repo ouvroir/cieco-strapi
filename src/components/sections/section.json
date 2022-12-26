@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_sections",
+  "info": {
+    "displayName": "section"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.rich-text"
+    }
+  }
+}

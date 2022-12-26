@@ -1,10 +1,10 @@
 {
-  "kind": "singleType",
-  "collectionName": "abouts",
+  "kind": "collectionType",
+  "collectionName": "partners",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "À propos",
+    "singularName": "partner",
+    "pluralName": "partners",
+    "displayName": "Partenaires",
     "description": ""
   },
   "options": {
@@ -19,10 +19,11 @@
     "label": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "title": {
       "pluginOptions": {
@@ -30,22 +31,47 @@
           "localized": true
         }
       },
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
-    "content": {
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "dynamiczone",
-      "components": [
-        "shared.image",
-        "shared.quote",
-        "shared.rich-text",
-        "shared.share-image",
-        "shared.slider"
-      ]
+      "type": "richtext"
+    },
+    "address": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "link": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     },
     "slug": {
       "pluginOptions": {
@@ -54,29 +80,8 @@
         }
       },
       "type": "uid",
-      "targetField": "label"
-    },
-    "SEO": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "dynamiczone",
-      "components": [
-        "shared.seo"
-      ]
-    },
-    "sectionTitle": {
-      "displayName": "section",
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "sections.section"
+      "targetField": "label",
+      "required": true
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_titre_sections",
+  "info": {
+    "displayName": "SectionTitle",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.rich-text"
+    }
+  }
+}
