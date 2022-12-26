@@ -71,33 +71,49 @@
       "type": "string",
       "required": true
     },
-    "status": {
-      "type": "enumeration",
-      "enum": [
-        "co-chercheuse·r",
-        "collaborat·rice·eur",
-        "coordonnat·rice·eur",
-        "étudiant·e"
-      ],
-      "required": true
-    },
-    "biography": {
+    "title": {
       "type": "richtext"
     },
-    "content": {
-      "type": "dynamiczone",
-      "components": [
-        "shared.accordion"
-      ]
+    "status": {
+      "type": "richtext"
+    },
+    "adress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.adress"
+    },
+    "coverage": {
+      "type": "richtext"
+    },
+    "teaching": {
+      "type": "richtext"
+    },
+    "research": {
+      "type": "richtext"
+    },
+    "affiliation": {
+      "type": "richtext"
     },
     "link": {
       "type": "string"
     },
-    "twitter": {
-      "type": "string"
+    "pic": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "github": {
-      "type": "string"
+    "slug": {
+      "type": "uid",
+      "targetField": "surname"
+    },
+    "fonction": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::function.function",
+      "inversedBy": "users"
     }
   }
 }

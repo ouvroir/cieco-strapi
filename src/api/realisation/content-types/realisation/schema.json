@@ -129,12 +129,6 @@
       "target": "api::place.place",
       "inversedBy": "realisations"
     },
-    "projets": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::projet.projet",
-      "mappedBy": "realisations"
-    },
     "SEO": {
       "pluginOptions": {
         "i18n": {
@@ -163,6 +157,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::type.type"
+    },
+    "projets": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::projet.projet",
+      "mappedBy": "realisations"
     }
   }
 }

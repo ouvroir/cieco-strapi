@@ -9,11 +9,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "content": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.rich-text"
     }
   }
 }

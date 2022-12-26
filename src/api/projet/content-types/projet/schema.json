@@ -67,7 +67,8 @@
         "shared.rich-text",
         "shared.slider",
         "shared.accordion",
-        "shared.share-image"
+        "shared.share-image",
+        "shared.titre-section"
       ]
     },
     "team": {
@@ -83,7 +84,8 @@
         "shared.rich-text",
         "shared.slider",
         "shared.accordion",
-        "shared.share-image"
+        "shared.share-image",
+        "shared.titre-section"
       ]
     },
     "axes": {
@@ -99,18 +101,19 @@
         "shared.rich-text",
         "shared.slider",
         "shared.accordion",
-        "shared.share-image"
+        "shared.share-image",
+        "shared.titre-section"
       ]
     },
     "realisations": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::realisation.realisation",
       "inversedBy": "projets"
     },
     "annonces": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::announcement.announcement",
       "inversedBy": "projets"
     },

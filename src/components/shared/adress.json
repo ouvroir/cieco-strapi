@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_shared_adresses",
+  "info": {
+    "displayName": "adress"
+  },
+  "options": {},
+  "attributes": {
+    "institution": {
+      "type": "richtext"
+    },
+    "adressline1": {
+      "type": "richtext"
+    },
+    "adressline2": {
+      "type": "richtext"
+    },
+    "adressline3": {
+      "type": "richtext"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    }
+  }
+}
