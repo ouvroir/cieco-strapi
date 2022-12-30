@@ -1,7 +1,8 @@
 {
   "collectionName": "components_shared_adresses",
   "info": {
-    "displayName": "adress"
+    "displayName": "adress",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -32,7 +33,7 @@
     "phone": {
       "type": "string"
     },
-    "Facebook": {
+    "facebook": {
       "type": "string"
     },
     "twitter": {
@@ -42,6 +43,12 @@
       "type": "string"
     },
     "github": {
+      "type": "string"
+    },
+    "phone2": {
+      "type": "string"
+    },
+    "publicEmail": {
       "type": "string"
     }
   }

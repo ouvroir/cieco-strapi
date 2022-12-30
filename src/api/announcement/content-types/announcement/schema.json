@@ -165,6 +165,14 @@
       "relation": "manyToMany",
       "target": "api::projet.projet",
       "mappedBy": "annonces"
+    },
+    "eventDateEnd": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "date"
     }
   }
 }

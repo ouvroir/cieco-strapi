@@ -114,6 +114,9 @@
       "relation": "manyToOne",
       "target": "api::function.function",
       "inversedBy": "users"
+    },
+    "biography": {
+      "type": "richtext"
     }
   }
 }
