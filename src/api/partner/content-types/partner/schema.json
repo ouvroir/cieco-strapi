@@ -82,6 +82,12 @@
       "type": "uid",
       "targetField": "label",
       "required": true
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::projet.projet",
+      "mappedBy": "partners"
     }
   }
 }

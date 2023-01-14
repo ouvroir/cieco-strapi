@@ -117,16 +117,16 @@
       "target": "api::announcement.announcement",
       "inversedBy": "projets"
     },
-    "logos": {
+    "cover": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images"
       ],
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       }
     },
@@ -148,6 +148,52 @@
         }
       },
       "type": "richtext"
+    },
+    "dates": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "studentsExperience": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.image",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider",
+        "shared.accordion",
+        "shared.titre-section"
+      ]
+    },
+    "theoricalResults": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.image",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.slider",
+        "shared.accordion",
+        "shared.titre-section"
+      ]
+    },
+    "partners": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::partner.partner",
+      "inversedBy": "projects"
     }
   }
 }

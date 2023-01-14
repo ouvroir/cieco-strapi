@@ -9,7 +9,7 @@
   "attributes": {
     "label": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "caption": {
       "type": "richtext"
@@ -18,14 +18,18 @@
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "comment": {
+      "type": "richtext"
     }
   }
 }
