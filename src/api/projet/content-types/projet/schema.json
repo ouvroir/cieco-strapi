@@ -194,6 +194,12 @@
       "relation": "manyToMany",
       "target": "api::partner.partner",
       "inversedBy": "projects"
+    },
+    "funders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::funder.funder",
+      "mappedBy": "projects"
     }
   }
 }
