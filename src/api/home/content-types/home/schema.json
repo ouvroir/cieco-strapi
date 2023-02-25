@@ -53,16 +53,6 @@
       },
       "component": "home.headlines"
     },
-    "content": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "home.home-content"
-    },
     "videos": {
       "type": "component",
       "repeatable": false,
@@ -102,6 +92,17 @@
         }
       },
       "component": "home.partner-item"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "home.home-content"
+      ]
     }
   }
 }
