@@ -2,11 +2,12 @@
   "collectionName": "components_home_headlines",
   "info": {
     "displayName": "headlines",
-    "icon": "asterisk"
+    "icon": "asterisk",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "headlines": {
+    "label": {
       "type": "string"
     },
     "announcements": {
