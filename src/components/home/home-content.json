@@ -10,6 +10,9 @@
     "label": {
       "type": "string"
     },
+    "title": {
+      "type": "richtext"
+    },
     "content": {
       "type": "richtext"
     },
