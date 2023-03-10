@@ -88,6 +88,18 @@
       "relation": "manyToMany",
       "target": "api::projet.projet",
       "mappedBy": "partners"
+    },
+    "announcements": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::announcement.announcement",
+      "inversedBy": "partners"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::realisation.realisation",
+      "inversedBy": "partners"
     }
   }
 }

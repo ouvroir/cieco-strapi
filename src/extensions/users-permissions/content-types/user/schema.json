@@ -117,6 +117,18 @@
     },
     "biography": {
       "type": "richtext"
+    },
+    "announcements": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::announcement.announcement",
+      "inversedBy": "users"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::realisation.realisation",
+      "inversedBy": "users"
     }
   }
 }

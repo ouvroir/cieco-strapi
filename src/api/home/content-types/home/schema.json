@@ -96,6 +96,16 @@
       },
       "type": "uid",
       "required": true
+    },
+    "mailinglist": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home.service"
     }
   }
 }
