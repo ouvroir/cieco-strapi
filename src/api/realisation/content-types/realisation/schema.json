@@ -183,6 +183,26 @@
       "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "realisations"
+    },
+    "attachments": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.attachment"
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.link"
     }
   }
 }

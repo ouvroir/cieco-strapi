@@ -122,13 +122,13 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::announcement.announcement",
-      "inversedBy": "users"
+      "mappedBy": "users"
     },
     "realisations": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::realisation.realisation",
-      "inversedBy": "users"
+      "mappedBy": "users"
     }
   }
 }

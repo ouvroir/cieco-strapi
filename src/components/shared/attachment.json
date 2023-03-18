@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_attachments",
+  "info": {
+    "displayName": "attachment",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
