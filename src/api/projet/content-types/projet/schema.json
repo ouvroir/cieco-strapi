@@ -23,8 +23,7 @@
         }
       },
       "type": "string",
-      "required": true,
-      "private": true
+      "required": true
     },
     "title": {
       "pluginOptions": {
