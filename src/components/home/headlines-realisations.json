@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_headlines_realisations",
+  "info": {
+    "displayName": "Headlines-realisations"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "sources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::type.type"
+    },
+    "realisations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::realisation.realisation"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_headlines_announces",
+  "info": {
+    "displayName": "Headlines-announcements",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "sources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::type.type"
+    },
+    "announcements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::announcement.announcement"
+    }
+  }
+}

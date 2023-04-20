@@ -16,7 +16,7 @@
     "users": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     },
     "partners": {
       "type": "relation",
