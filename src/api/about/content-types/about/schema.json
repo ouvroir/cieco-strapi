@@ -54,8 +54,7 @@
         }
       },
       "type": "uid",
-      "targetField": "label",
-      "required": true
+      "targetField": "label"
     },
     "SEO": {
       "pluginOptions": {
