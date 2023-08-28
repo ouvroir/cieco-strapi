@@ -95,7 +95,8 @@
         }
       },
       "type": "uid",
-      "required": true
+      "required": true,
+      "targetField": "label"
     },
     "mailinglist": {
       "type": "component",
@@ -106,6 +107,14 @@
         }
       },
       "component": "home.service"
+    },
+    "label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
