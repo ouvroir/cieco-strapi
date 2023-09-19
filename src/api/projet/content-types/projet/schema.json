@@ -50,7 +50,6 @@
         }
       },
       "type": "uid",
-      "targetField": "label",
       "required": true
     },
     "content": {

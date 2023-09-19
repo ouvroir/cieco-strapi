@@ -66,8 +66,7 @@
           "localized": true
         }
       },
-      "type": "uid",
-      "targetField": "label"
+      "type": "uid"
     },
     "SEO": {
       "pluginOptions": {
